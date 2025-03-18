@@ -82,6 +82,9 @@ For more help on Inkscape and JessyInk:
 10. Include the slides in a Jupyter Book: Copy your presentation to the `_static` folder. This will make sure it's available after the build. Reference to the file using relative links using [](../external/sphinx-iframes/README.md). Use `../` to go to the directory above or `./` to open the current directory, i.e. the following syntax will give you the [figure as shown above](svg_presentation):
 
 ````md
-```{iframe} ../_static/my_first_svg_presentation.svg
+```{iframe-figure} ../_static/my_first_svg_presentation.svg
+:name: svg_presentation
+
+Click through this interactive SVG image!
 ```
 ````   
