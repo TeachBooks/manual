@@ -1,5 +1,12 @@
 # Interactive SVG images
 
+{bdg-success}`External software`
+
+```{admonition} User types
+:class: tip
+This section is useful for user type 3-5.
+```
+
 SVG images can be made interactive by adding 'slides' to the SVG. This allows users to click through a set of images, showing dynamic processes. To make these kind of images, you can make use of Inkscape with JessyInk:
 
 ```{iframe-figure} ../_static/my_first_svg_presentation.svg
