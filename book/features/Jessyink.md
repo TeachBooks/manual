@@ -1,4 +1,12 @@
-# Inkscape-JessyInk SVG slides
+# Interactive SVG images
+
+SVG images can be made interactive by adding 'slides' to the SVG. This allows users to click through a set of images, showing dynamic processes. To make these kind of images, you can make use of Inkscape with JessyInk:
+
+```{iframe} ../_static/my_first_svg_presentation.svg
+:name: svg_presentation
+
+Click through this interactive SVG image!
+```
 
 [Inkscape](https://inkscape.org/) is a drawing program with which you can create SVG files.
 
@@ -17,29 +25,19 @@ For more help on Inkscape and JessyInk:
 
 1. Start Inkscape
 
-2. Activate the JessyInk extension.
-
-   From the main menu select: "Extensions" --> "JessyInk" --> "install/update..." and click "Apply".
+2. Activate the JessyInk extension. From the main menu select: "Extensions" --> "JessyInk" --> "install/update..." and click "Apply".
    
-3. Display the layers tab:
-
-   From the main menu select: "Layer"  --> "Layers And Objects..."
+3. Display the layers tab: From the main menu select: "Layer"  --> "Layers And Objects..."
    
 4. Create a master slide: the information on this slide will be displayed on all slides
 
-   1. On the layers tab right-click the layer name and select: "Rename Layer...". 
-   
-      This will bring up the "Rename Layer" dialog box. Enter the layer name e.g. "master slide" and click "Rename". 
+   1. On the layers tab right-click the layer name and select: "Rename Layer...".  This will bring up the "Rename Layer" dialog box. Enter the layer name e.g. "master slide" and click "Rename". 
       
-   2. From the main menu select: "Extensions" --> "JessyInk" --> "Master slide...".
-   
-      This will bring up the "Maste slide" dialog box. Enter the name of your master slide and click "Apply".
+   2. From the main menu select: "Extensions" --> "JessyInk" --> "Master slide...". This will bring up the "Maste slide" dialog box. Enter the name of your master slide and click "Apply".
       
 5. Put some stuff on this master slide. Later you can adjust it or move it to a better location. In this example, will put the following information on each slide:
 
-   1. The title of the presentation
-   
-      Place a text object with the title of the presentation somewhere on this master slide
+   1. The title of the presentation. Place a text object with the title of the presentation somewhere on this master slide
          
    2. The name of the slide (using a placeholder)
    
@@ -55,21 +53,15 @@ For more help on Inkscape and JessyInk:
       3. From the main menu select: "Extensions" --> "JessyInk" --> "Auto-texts..."
       4. This brings up the "Auto-texts" dialog box. Select "Slide number" and click "Apply".
 
-6. Create your slides
-
-   Each layer is a slide. The information on the master slide is added to each layer.
+6. Create your slides. Each layer is a slide. The information on the master slide is added to each layer.
 
     - For each slide click "+" on the layers tab or copy and rename an existing slide.
     - Moving your mouse across a layer or an object displays a few icons. You can view/hide the layer/object by toggling the *eye* icon. You can enable/disable editing by toggling the *key* icon.
     - Create or modify the contents of the slide
 
-7. Adjust the position of the master sheet objects such that they nicely line-up with your slides.
+7. Adjust the position of the master sheet objects such that they nicely line-up with your slides.. Adjust the width, height, and scale of the presentation.
 
-   Adjust the width, height, and scale of the presentation.
-
-    1. From the main menu select: "Document properties"
-    
-    **DO NOT SELECT "Resize to content:"**
+    1. From the main menu select: "Document properties". **DO NOT SELECT "Resize to content:"**
     
     2. Adjust "Width:", "Height:" and "Scale:".
     
@@ -78,28 +70,11 @@ For more help on Inkscape and JessyInk:
    1. From the main menu select: "File" --> "Save As..."
    2. Select a folder, enter a file name, and press "Save".
    
-9. Show the presentation
+9. Show the presentation. Open the presentation in a webbrowser. Use the mouse scroll wheel, "PgUp", "PgDn", "^", "⌄", "<", or ">" to go through the slides. If necessary, fix the position of the presentation in the browser by pressing the "Shift" key while scrolling through it.
 
-    Open the presentation in a webbrowser. Use the mouse scroll wheel, "PgUp", "PgDn", "^", "⌄", "<", or ">" to go through the slides. If necessary, fix the position of the presentation in the browser by pressing the "Shift" key while scrolling through it.
-    
-10. Include the slides in a Jupyter Notebook
+10. Include the slides in a Jupyter Book: Copy your presentation to the `_static` folder. This will make sure it's available after the build. Reference to the file using relative links using [](../external/sphinx-iframes/README.md). Use `../` to go to the directory above or `./` to open the current directory, i.e. the following syntax will give you the [figure as shown above](svg_presentation):
 
-    ```python
-    from IPython.display import IFrame
-
-    # IFrame(src, width, height)
-    # src:    source file location
-    # width:  width in pixels
-    # height: height in pixels
-    IFrame("my_first_svg_presentation.svg", 600, 400)
-    ```
-
-11. Include the slides in a Jupyter Book
-
-    Copy your presentation to the html folder in which Jupyter Book places the output of your *.myst* file with the presentation. This is not automatically done when building the Jupyter Book.
-    
-    ```html
-    <iframe width="600" height="400" title="First SVG presentation" src="my_first_svg_presentation.svg"></iframe>
-    ```
-
-    
+````md
+```{iframe} ../_static/my_first_svg_presentation.svg
+```
+````   
