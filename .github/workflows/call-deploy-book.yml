@@ -17,7 +17,7 @@ on:
 
 jobs: 
   call-workflow:
-    uses: TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@main
+    uses: TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@update-manual-docs-and-add-one-more-build-comment
     secrets: inherit
     permissions:
       contents: read
