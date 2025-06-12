@@ -12,7 +12,7 @@ SVG images can be made interactive by adding 'slides' to the SVG. This allows us
 ```{iframe-figure} ../_static/my_first_svg_presentation.svg
 :name: svg_presentation
 
-Click through this interactive SVG image, available for download [here](./my_first_svg_presentation.svg)
+Click through this interactive SVG image. Use the mouse scroll wheel, `PgUp`, `PgDn`, `^`, `⌄`, `<`, or `>` to go through the slides. Fix the position of the presentation in the browser by pressing the “Shift” key while scrolling through it. The image is available for download [here](./my_first_svg_presentation.svg)
 ```
 
 [Inkscape](https://inkscape.org/) is a drawing program with which you can create SVG files.
