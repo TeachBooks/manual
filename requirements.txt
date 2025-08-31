@@ -2,7 +2,7 @@ teachbooks == 0.2.1
 sphinx-inline-tabs == 2023.4.21
 jupyterbook_patches == 1.7.0
 download_link_replacer == 1.0.4
-teachbooks-sphinx-grasple == 1.2.3
+teachbooks-sphinx-grasple == 1.2.4
 sphinx-image-inverter == 1.1.2
 sphinx-exercise == 1.0.1
 sphinx-proof == 0.2.1
