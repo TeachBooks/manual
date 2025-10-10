@@ -79,7 +79,7 @@ parts:
         - file: features/widgets.ipynb
         - file: features/exercise_checking.ipynb
       - file: features/jupyterquiz.ipynb
-      - file: external/sphinx-iframes/README.md
+      - external: https://github.com/TeachBooks/sphinx-iframes/blob/manual/README.md
       - external: https://github.com/TeachBooks/Sphinx-Indexed-Definitions/blob/manual/README.md
       - file: external/Sphinx-PRIME-applets/README.md
       - external: https://github.com/TeachBooks/Sphinx-Dropdown-Toggle/blob/main/MANUAL.md
