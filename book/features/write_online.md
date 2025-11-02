@@ -18,7 +18,7 @@ This section is useful for user type 3-5.
 
 [{octicon}`mark-github` Repository template](https://github.com/TeachBooks/template)
 
-[{octicon}`book` Documentation](../workflows/collaboration.md)
+[{octicon}`book` Collaborative book-editing](../workflows/collaboration.md)
 
 {octicon}`pencil` Exercises:
 - [First file edit](https://teachbooks.io/template/exercises/001.html)
