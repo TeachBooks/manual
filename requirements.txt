@@ -1,7 +1,7 @@
 teachbooks == 0.2.3
 sphinx-inline-tabs
 
-git+https://github.com/TeachBooks/TeachBooks-Favourites
+git+https://github.com/TeachBooks/TeachBooks-Favourites@v1.5.7
 
 teachbooks-sphinx-grasple
 
