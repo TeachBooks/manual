@@ -78,6 +78,7 @@ parts:
         sections:
         - file: features/widgets.ipynb
         - file: features/exercise_checking.ipynb
+      - file: features/Jessyink
       - file: features/jupyterquiz.ipynb
       - file: external/sphinx-iframes/README.md
       - external: https://github.com/TeachBooks/Sphinx-Indexed-Definitions/blob/manual/README.md
