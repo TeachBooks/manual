@@ -1,0 +1,23 @@
+[workspace]
+authors = ["FreekPols <c.f.j.pols@tudelft.nl>"]
+channels = ["conda-forge"]
+name = "manual"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+teachbooks = "teachbooks build book"
+server = "teachbooks serve"
+editor = "jupyter lab"
+
+[dependencies]
+python = ">=3.14.7,<3.15"
+jupyterlab = ">=4.6.3,<5"
+numpy = ">=2.5.2,<3"
+matplotlib = ">=3.11.1,<4"
+
+[pypi-dependencies]
+teachbooks = ">=0.2.5, <0.3"
+teachbooks-favourites = { git = "https://github.com/TeachBooks/TeachBooks-Favourites.git" }
+sphinx-inline-tabs = ">=2025.12.21.14, <2026"
+sphinx-apa-references = ">=1.0.1, <2"

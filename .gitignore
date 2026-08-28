@@ -140,4 +140,6 @@ book/.jupyterlite.doit.db
 **.teachbooks/
 book/_toc_with_local_paths.yml
 book/_git/
-book/conf.py
+book/conf.py# pixi environments
+.pixi/*
+!.pixi/config.toml
