@@ -17,7 +17,6 @@ parts:
     - file: installation-and-setup/overview.md
       sections:
       - file: installation-and-setup/vscode-setup.md
-      - file: installation-and-setup/pixi.md
       - file: installation-and-setup/git-setup_local.md
       - file: installation-and-setup/anaconda.md
       - file: installation-and-setup/git_bash_conda_vs-code.md
