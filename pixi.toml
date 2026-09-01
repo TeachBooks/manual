@@ -2,24 +2,18 @@
 authors = ["FreekPols <c.f.j.pols@tudelft.nl>"]
 channels = ["conda-forge"]
 name = "manual"
-platforms = ["win-64"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
 teachbooks = "teachbooks build book"
 server = "teachbooks serve"
 editor = "jupyter lab"
+teachbooks_install = "pixi import --format=pypi-txt --environment=default requirements.txt"
 
 [dependencies]
 python = ">=3.14.7,<3.15"
 jupyterlab = ">=4.6.3,<5"
-numpy = ">=2.5.2,<3"
-matplotlib = ">=3.11.1,<4"
 
 [pypi-dependencies]
-teachbooks = ">=0.2.5, <0.3"
-teachbooks-favourites = { git = "https://github.com/TeachBooks/TeachBooks-Favourites.git" }
-sphinx-inline-tabs = ">=2025.12.21.14, <2026"
-sphinx-apa-references = ">=1.0.1, <2"
 jupyterlab-myst = ">=2.7.0, <3"
-teachbooks-sphinx-grasple = ">=1.3.0, <2"
