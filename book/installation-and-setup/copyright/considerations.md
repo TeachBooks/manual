@@ -1,7 +1,14 @@
+````{margin}
+```{attributiongrey} Attribution
+:class: attribution
+This page reuses adapted CC BY content from {cite:t}`tud_cip_24`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
+```
+````
+
 (copyright_considerations)=
 # Copyright Considerations
 
-> This page reuses adapted CC BY content from {cite:t}`tud_cip_24`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
+
 
 Copyright law dictates how online book material can and should be created, maintained and shared. An author should understand a few key concepts, as well as best practices, in order to create a book that not only is a useful resource, but, also fairly reuses the work of others and, if provided with an open license, enables original content to also be reused.
 
@@ -58,12 +65,6 @@ The use of open licenses actually does not prohibit the author from using the ma
 ```
 
 **Still don't agree?** Sorry. Please take this up with your nearest library or copyright expert and let us know if you get a different response! In the meantime, we will simply list ourselves as authors, use CC BY licenses and remember that TU Delft holds the copyright for our work produced as teachers.
-
-```{warning}
-The TeachBooks Team isn't sure where code and data lie here. Since TeachBooks is oriented towards education, we assume that TU Delft also owns the copyright for this.
-
-Do you have a better answer? Let us know!
-```
 
 ## Licensing
 

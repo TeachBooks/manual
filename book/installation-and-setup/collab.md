@@ -1,9 +1,11 @@
-# Organize editing team, collaboration and visibility
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 4-5.
 ```
+````
+
+# Organize editing team, collaboration and visibility
 
 ## Roles and responsibilities
 To ensure smooth collaboration, it is essential to define the roles and responsibilities within your team. Firstly, designate who will be in charge of team organization ('administrators') who should be at least user type 4. Additionally, assign 'maintainers' responsible for combining content, also requiring at least user type 4. 'Editors' should be identified for editing and reviewing content, requiring at least user type 3.
@@ -13,7 +15,7 @@ Finally, ensure that team members identify themselves according to the user type
 ## Review process
 Furthermore, establish a clear editing and review process.
 
-For the editing process, establish some practical rules on whether to use issues, branches and forks for adding content, fixing typos or making other changes. Furthermore, it can help to write down when you expect (draft) merge/pull requests and how to use the assign and review options in GitHub/GitLab. It is advisable to have at least a maintainer review each piece of content to maintain quality and consistency. Provide explanation on how you organize the book-editing and how you'd like to receive feedback in both the readme as the published book. The use of the [repository button {fa}`fa-github`, suggest edit {fa}`pencil` and issue button {fa}`lightbulb`](https://jupyterbook.org/en/stable/basics/repository.html) is advised.
+For the editing process, establish some practical rules on whether to use issues, branches and forks for adding content, fixing typos or making other changes. Furthermore, it can help to write down when you expect (draft) merge/pull requests and how to use the assign and review options in GitHub/GitLab. It is advisable to have at least a maintainer review each piece of content to maintain quality and consistency. Provide explanation on how you organize the book-editing and how you'd like to receive feedback in both the readme as the published book. The use of the [repository button {octicon}`mark-github`, suggest edit {fa}`pencil` and issue button {fa}`lightbulb`](https://jupyterbook.org/v1/basics/repository.html) is advised.
 
 (draft_book)=
 ## Define draft version of book

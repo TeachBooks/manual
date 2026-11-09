@@ -1,6 +1,6 @@
 # JupyterLite-Sphinx
 
-By popular demand: how to include interactive pieces of code in your Jupyter Book. We can do this by using the [JupyterLite](https://github.com/jupyterlite) app, which allows you to run a Jupyter Lab session and execute Python code entirely in-browser. Jupyterlite can be embedded in a Jupyter Book with the [`JupyterLite-Sphinx`](https://github.com/jupyterlite/jupyterlite-sphinx) extension.
+By popular demand: how to include interactive pieces of code in your TeachBook. We can do this by using the [JupyterLite](https://github.com/jupyterlite) app, which allows you to run a Jupyter Lab session and execute Python code entirely in-browser. Jupyterlite can be embedded in a TeachBook with the [`JupyterLite-Sphinx`](https://github.com/jupyterlite/jupyterlite-sphinx) extension.
 
 ## An example
 

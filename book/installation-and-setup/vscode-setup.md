@@ -1,9 +1,11 @@
-# Editing text: VS Code
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 4 and 5.
 ```
+````
+
+# Editing text: VS Code
 
 VS Code is a text editor with some extra features, such as integrated source control and a file browser. Moreover, extensions are available to add functionality to VS Code.
 
@@ -13,7 +15,7 @@ VS Code can be downloaded from [here](https://code.visualstudio.com). The instal
 
 ## Extensions
 
-When working with Jupyter Book (or Notebooks in general), these extensions are highly recommended:
+When working with TeachBooks (or Jupyter Notebooks in general), these extensions are highly recommended:
 
 - User type 4-5:
     - [MyST-Markdown](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) - adds support for MyST markdown, including previews.

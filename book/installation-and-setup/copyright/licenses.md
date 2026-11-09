@@ -1,7 +1,12 @@
+````{margin}
+```{attributiongrey} Attribution
+:class: attribution
+This page reuses adapted CC BY content from {cite:t}`hall21`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
+```
+````
+
 (copyright_licenses)=
 # Licenses
-
-> This page reuses adapted CC BY content from {cite:t}`hall21`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
 
 Here we present an overview of various license types, with a particular focus on the preference of TeachBooks to use Permissive Open Licenses, regardless of whether material is _content, code or data_ (described below). 
 
@@ -11,7 +16,7 @@ Here we present an overview of various license types, with a particular focus on
 Since we (TeachBooks) authors have been working on making online books, we see the value in making content available for reuse. When preparing a new page or assignment, nothing makes us happier than seeing a CC BY license on something that we would like to (re)use ourselves. Why? Because we know that all we have to do is properly attribute the work and we can get on with our true passion: **teaching!**
 ```
 
-This page is written expressly for content authors of online interactive textbooks (e.g., those including, but not restricted to, Jupyter Books), which are composed of two parts:
+This page is written expressly for content authors of online interactive textbooks (e.g., those including, but not restricted to, TeachBooks), which are composed of two parts:
 1. An online document in the form of a website, accessible at a specific URL, and
 2. The _source code,_ which defines the _content_ and is required to create the website.
 

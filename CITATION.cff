@@ -1,0 +1,51 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+message: 'If you use this Book, please cite it using these metadata.'
+authors:
+  - email: info@teachbooks.io
+    name: 'TeachBooks Development Team'
+    website: 'https://teachbooks.io/'
+title: 'TeachBooks Manual source code'
+preferred-citation:
+  type: book
+  authors:
+  - email: info@teachbooks.io
+    name: 'TeachBooks Development Team'
+    website: 'https://teachbooks.io/'
+  url: 'https://doi.org/10.5281/zenodo.15100847' 
+  identifiers:
+    - type: doi
+      value: 10.5281/zenodo.15100848
+      description: Zenodo record
+    - type: url
+      value: 'https://teachbooks.io/manual/'
+      description: 'Published book on GitHub Pages'
+    - type: url
+      value: 'https://github.com/TeachBooks/manual'
+      description: 'GitHub repository'
+  abstract: >-
+    his manual assists you in creating and collaborating on TeachBooks
+    for educational purposes. Some parts are specifically aimed for
+    teachers at Delft University of Technology, although all material and
+    tools are openly available. This manual aims at providing an easy start
+    and advanced usages for new and existing users with or without skills
+    on this topic. 
+  keywords:
+    - TeachBooks
+    - Manual
+    - 'Jupyter Book'
+  title: 'TeachBooks Manual'
+  institution:
+    name: 'TeachBooks'
+  license: CC-BY-4.0
+  license-url: 'https://creativecommons.org/licenses/by/4.0/'
+  copyright: '© 2025 TeachBooks'
+  version: v1.2.1
+  date-released: '2025-03-28'
+  languages:
+    - en
+  contact:
+  - email: info@teachbooks.io
+    name: 'TeachBooks Development Team'

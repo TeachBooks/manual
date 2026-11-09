@@ -1,9 +1,11 @@
-# Collaboration tool: Git
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 3-5.
 ```
+````
+
+# Collaboration tool: Git
 
 You will need to interact with Git to collaborate on a TeachBook, even if you are working by yourself! You've been introduced to it in the [exercises in the template](../intro/template.md) and you'll be guided through all of the steps in detail in [](../workflows/collaboration.md), but what is this "thing" that sounds suspiciously like something only a computer scientist would want to use?
 

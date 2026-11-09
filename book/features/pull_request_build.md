@@ -1,9 +1,11 @@
-# Build pull requests from forks
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This section is useful for user type 3-5.
 ```
+````
+
+# Build pull requests from forks
 
 When writing a TeachBook it is useful to automatically build and view these changes online. This exactly why we designed and build the [deploy-book-workflow](../external/deploy-book-workflow/README.md) tool, which also allows for multiple versions of your book to exist at any time with customizable URL's. However, it doesn't cover all use cases. Luckily, **Read the Docs** is a free tool that can easily be used for this purpose. It also provides a very easy way to view differences between versions on each page!
 
@@ -11,7 +13,7 @@ Pull Requests are a key tool for allowing anyone with a GitHub account to make a
 
 Read the Docs is not recommended for final versions of your book because of the advertisement in the free version. If you'd like to pay for it, it can replace the functionality of the [deploy-book-workflow](../external/deploy-book-workflow/README.md).
 
-This tool works using Sphinx, which is the core engine for Jupyter Book; it is carried out using a Jupyter Book command to generate a Sphinx configuration file, for example:
+This tool works using Sphinx, which is the core engine for Jupyter Book v1; it is carried out using a Jupyter Book command to generate a Sphinx configuration file, for example:
 
 ```
 jupyter-book config sphinx book/

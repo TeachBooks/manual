@@ -4,10 +4,10 @@ Lastly some example pages are shown which combine theory and interactive questio
 
 1. [Programming Assignments](example_gumbel.ipynb)
 
-    This page shows how you can recreate the classical Jupyter Notebook assignments that are given in many courses to a Jupyter Book format with live coding. 
+    This page shows how you can recreate the classical Jupyter Notebook assignments that are given in many courses to a TeachBook format with live coding. 
 
 ```{Note}
-Keep in mind that Jupyter Book sections might not be the best environment for programming assignments you have in mind for your course due to the limitation posed by jupyter book. In fact, in jupyter book, python runs in the browser of the students' laptop. Nothing needs to be installed which can be an advantage but also a disadvantage depending on the learning goals of your course. TeachBooks suggests using it's live coding feature to support the theory in textbooks and not as a replacement for Jupyter Notebook.
+Keep in mind that TeachBook sections might not be the best environment for programming assignments you have in mind for your course due to the limitation posed by TeachBook. In fact, in a TeachBook, python runs in the browser of the students' laptop. Nothing needs to be installed which can be an advantage but also a disadvantage depending on the learning goals of your course. TeachBooks suggests using it's live coding feature to support the theory in textbooks and not as a replacement for Jupyter Notebook.
 ```
 
 2. [Combining theory with interactive questions and extensive coding assignments](example_quiz_interactive.ipynb)

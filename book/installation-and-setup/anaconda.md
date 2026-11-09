@@ -1,9 +1,11 @@
-# Managing code-related software: Anaconda
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 5.
 ```
+````
+
+# Managing code-related software: Anaconda
 
 Before you can start using python in your book, you need Anaconda. 'Anaconda's conda tool simplifies package and environment management across operating systems' (Anaconda.com), such as windows or MacOS. It makes getting started with python a lot easier because it already has a lot of useful python packages pre-installed. Unfortunately, each of these packages are themselves require a number of different packages to function properly. Do you like installing all of them? You shouldn't---but where do you get them come from? Many of those packages are packages required by only a few specific packages. These packages are called _dependencies_, and are necessary to make your Python packages function as expected. When you run install a specific package, `conda` (part of Anaconda) checks all of the dependent packages that are needed and makes sure they are also provided in the `environment` (collection of software with a specific version) that is being created. In reality, this is simply a folder on your computer with all of the `*.py` files stored in it. This _package management_ is what `conda` and `pip` are really doing when you use them to install a package. It also checks that it has a suitable _version_ of each dependency; this is why it sometime takes a long time to install a package Unfortunately, this means that as you add more packages to a particular environment, it gets more and more difficult to make sure everything works well together. Luckily, there is a practical solution: create new environments for specific projects to make sure the proper packages can function properly!
 
@@ -34,7 +36,7 @@ A python virtual environment is, like the name might suggest, a reserved space w
 
 ### Set-up environments
 
-Now we will set up your first environment. The following steps will create an Anaconda environment and install Python 3.11. Even if you already have Python 3.11, it is still good practice to create a dedicated Anaconda environment for each of your major projects such as creating a jupyter book.
+Now we will set up your first environment. The following steps will create an Anaconda environment and install Python 3.11. Even if you already have Python 3.11, it is still good practice to create a dedicated Anaconda environment for each of your major projects such as creating a TeachBook.
 
 For simplicity we will call this environment `my_new_book_env`, but you can give it any name you like.
 
@@ -45,7 +47,7 @@ For simplicity we will call this environment `my_new_book_env`, but you can give
 
 4. Additional 4th step: `pip install -r requirements.txt` (explanation in the following section)
 
-Now everytime you want to work on your jupyter-book, you need to activate the environment! (step 3) If you don't activate your environment, you will work in a 'wrong' working environment that might not contain all the packages you need.
+Now everytime you want to work on your TeachBook, you need to activate the environment! (step 3) If you don't activate your environment, you will work in a 'wrong' working environment that might not contain all the packages you need.
 
 As mentioned before, python packages can be downloaded in the environments you create. Both NumPy and pandas are popular Python packages used for data manipulation and analysis. For the creation of Jupyter Books, we will use the package `teachbooks` which is a wrapper around JupyterBooks. More information about this package [here](jupyter-book-setup.md).
 

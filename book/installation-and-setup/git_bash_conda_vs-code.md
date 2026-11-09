@@ -1,12 +1,14 @@
-# Combining Git Bash, VS Code and Conda
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 5.
 ```
+````
+
+# Combining Git Bash, VS Code and Conda
 
 ## Conda in Git Bash
-Git Bash is a shell (also referred to as "the terminal") that is automatically installed with git. It provides Unix-like commands on a Windows OS, and is recommended for working with open source projects like Jupyter (for example `pip install`, building Jupyter books, using Git Bash in VS Code, etc). To do this, `conda` needs to be setup properly; this is described here:
+Git Bash is a shell (also referred to as "the terminal") that is automatically installed with git. It provides Unix-like commands on a Windows OS, and is recommended for working with open source projects like Jupyter (for example `pip install`, building TeachBooks, using Git Bash in VS Code, etc). To do this, `conda` needs to be setup properly; this is described here:
 
 (vscode-setup-bash)=
 ````{tab} Windows - Git Bash (preferred)

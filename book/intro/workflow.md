@@ -26,7 +26,7 @@ Let's create a space for you idea to form. You can create your own version of th
 width: 100px
 align: right
 ```
-Creativity activated, let's start adding content to your book! You'll add text, images, videos, math, interactive quizes, coding, widgets, etc. As editing the book is not directly done in a graphical interface with buttons like Microsoft Word, you'll need to learn a bit of syntax. The [MyST syntax cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html) will be added to your bookmarks. The changes you'll make have to be added to the GitHub version control system, creating `commits` on the your git `branch`.
+Creativity activated, let's start adding content to your book! You'll add text, images, videos, math, interactive quizes, coding, widgets, etc. As editing the book is not directly done in a graphical interface with buttons like Microsoft Word, you'll need to learn a bit of syntax. The [MyST syntax cheat sheet](https://jupyterbook.org/v1/reference/cheatsheet.html) will be added to your bookmarks. The changes you'll make have to be added to the GitHub version control system, creating `commits` on the your git `branch`.
 
 ## 4 check changes
 ```{figure} figures/check.png

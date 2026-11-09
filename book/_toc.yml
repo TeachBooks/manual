@@ -42,23 +42,16 @@ parts:
   - caption: Features
     chapters:
     - file: features/overview.md
-    - file: basic-features/overview.md
       sections:
-      - file: basic-features/jupyterbook.md
-      - file: basic-features/figures.md
-      - file: basic-features/equations.md
-      - file: basic-features/videos.md
-      - file: basic-features/References.md
-      - file: basic-features/code.md
-      - file: basic-features/Code_block_figures
-      - file: basic-features/badges.md
-      - file: basic-features/banner
-        title: Banner or Announcement
+      - file: features/teachbooks_intro.md
+      - file: external/deploy-book-workflow/README.md
+      - file: features/favourites.md
+      - file: external/template/README.md
     - file: features/easy-editing.md
       sections:
-      - file: external/template/README.md
-      - file: features/teachbooks
-      - file: external/deploy-book-workflow/README.md
+      - file: features/write_online.md
+      - file: features/release_book_online.md
+      - file: features/draft-release
       - file: features/pull_request_build.md
       - file: features/local_server
       - file: features/external_toc
@@ -88,30 +81,58 @@ parts:
       - file: features/Jessyink
       - file: features/jupyterquiz.ipynb
       - file: external/sphinx-iframes/README.md
+      - external: https://github.com/TeachBooks/Sphinx-Indexed-Definitions/blob/manual/README.md
       - file: external/Sphinx-PRIME-applets/README.md
+      - external: "https://github.com/TeachBooks/sphinx-code-examples/blob/main/MANUAL.ipynb"
+      - file: features/sphinx-proof.md
+      - external: "https://github.com/TeachBooks/Sphinx-NB-Execution-Patterns/blob/Manual/README.md"
+      - file: features/exercise.md
+      - external: https://github.com/TeachBooks/Sphinx-ref-graph/blob/manual/README.md
+      - external: https://github.com/TeachBooks/Sphinx-GitHub-Alerts/blob/main/README.md
+      - external: https://github.com/TeachBooks/Sphinx-Metadata-Figure/blob/main/MANUAL.ipynb
+      - external: https://github.com/TeachBooks/Sphinx-Gated-Directives/blob/main/MANUAL.md
+      - external: https://github.com/TeachBooks/TeachBooks-Questions/blob/main/MANUAL.md
+      - external: https://github.com/TeachBooks/TeachBooks-Fetch/blob/main/MANUAL.md
     - file: features/visuals.md
       sections:
+      - external: https://github.com/TeachBooks/Sphinx-Accessibility/blob/manual/README.md
       - file: external/Sphinx-Image-Inverter/README.md
       - file: external/JupyterBook-Patches/README.md
       - file: external/Sphinx-TUDelft-theme/README.md
       - file: external/teachbooks-sphinx-tippy/README.md
       - file: features/apa
       - file: external/Sphinx-Named-Colors/README.md
+      - external: https://github.com/TeachBooks/Sphinx-Dropdown-Toggle/blob/main/MANUAL.md
+      - external: https://github.com/TeachBooks/Sphinx-Sticky-Margin/blob/main/MANUAL.md
     - file: features/students
       sections:
       - file: external/annotater/README.md
       - file: basic-features/hypothesis.md
-
+  - caption: Original Jupyter Book v1 and Sphinx Features
+    chapters:
+    - file: basic-features/overview.md
+      sections:
+      - file: basic-features/jupyterbook.md
+      - file: basic-features/figures.md
+      - file: basic-features/equations.md
+      - file: basic-features/videos.md
+      - file: basic-features/References.md
+      - file: basic-features/code.md
+      - file: basic-features/Code_block_figures
+      - file: basic-features/badges.md
+      - file: basic-features/banner
+        title: Banner or Announcement
   - caption: Examples
     chapters:
     - file: examples/overview.md
-    - file: examples/book_structure.md
-    - file: examples/live_code.md
-    - file: examples/example_gumbel.ipynb
-    - file: examples/theory_questions.md
-    - file: examples/example_quiz_interactive.ipynb
-    - file: examples/coding_theory_widgets.ipynb
-    - file: examples/parametric_questions.ipynb
+      sections:
+      - file: examples/book_structure.md
+      - file: examples/live_code.md
+      - file: examples/example_gumbel.ipynb
+      - file: examples/theory_questions.md
+      - file: examples/example_quiz_interactive.ipynb
+      - file: examples/coding_theory_widgets.ipynb
+      - file: examples/parametric_questions.ipynb
 
   - caption: Editing Tools
     chapters:
@@ -119,11 +140,12 @@ parts:
     - file: helper_code/intro.md
       sections:
       - file: helper_code/converter.md
+      - file: helper_code/move_images.md
       - file: external/Useful_python_code/snippit.ipynb
       - file: external/Useful_python_code/extensionfildownloadreturn.ipynb
       - file: external/Useful_python_code/figshrinker.ipynb
        
-  - caption: Miscallaneous
+  - caption: Miscellaneous
     chapters:
     - file: references.md
     - file: credits

@@ -1,0 +1,4 @@
+/* Attribution */
+div.attribution > .admonition-title::after {
+    content: "\f10d";
+}

@@ -1,8 +1,8 @@
 title: TeachBooks Manual
-author: TeachBooks Team, built with <a href="https://teachbooks.io/">TeachBooks</a> and <a href="https://jupyterbook.org/">Jupyter Book</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
+author: TeachBooks Development Team and TeachBooks users, built with <a href="https://teachbooks.io/">TeachBooks</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
 
 execute:
-  execute_notebooks: 'off'
+  execute_notebooks: 'auto'
 
 only_build_toc_files: true
 
@@ -14,16 +14,11 @@ sphinx:
   extra_extensions:
   - sphinx_inline_tabs
   - sphinx.ext.imgconverter
-  - download_link_replacer
-  - jupyterbook_patches
+  - teachbooks_favourites
   - teachbooks_sphinx_grasple
-  - sphinx_image_inverter
-  - sphinx_exercise
-  - sphinx_proof
-  - sphinx_named_colors
-  - sphinx_iframes
-  - sphinx_prime_applets
+  - sphinx_apa_references
   config:
+    language: en
     html_js_files:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     thebe_config:
@@ -45,17 +40,23 @@ sphinx:
     html_show_copyright: false
     html_last_updated_fmt: '%B %-d, %Y'
     html_static_path: ["images"]
-    bibtex_default_style: myapastyle
-    bibtex_reference_style: author_year_round
     mathjax3_config:
       tex:
         macros:
           "newcolor": ['\definecolor{newcolor}{RGB}{111, 29, 119}{\color{newcolor}#1}',1]
-    named_colors_custom_colors: {'onlylight':[165,21,160],'lightanddark':[45,180,117,204,158,110],'hyphen-color':[45,180,117,165,21,160]}
-  local_extensions:
-    apastyle: _ext/
-    bracket_citation_style: _ext/
+    named_colors_custom_colors: {'onlylight':[165,21,160],'lightanddark':[45,180,117,204,158,110],'hyphen-color':[45,180,117,165,21,160],'attributiongrey':[150,150,150]}
+    metadata_figure_settings:
+      style: 
+        placement: hide
+      license:
+        summaries: false
+        individual: false
+    nb_execution_includepatterns: "**/MANUAL.ipynb"
+    git_show_all_authors: true
 
+teachbooks:
+  attribution_location: margin
+  attribution_color: attributiongrey
 
 bibtex_bibfiles: 
   - references.bib

@@ -1,6 +1,6 @@
 # You Know the Basics: What Next?
 
-You've seen what a JupyterBook is, how TeachBooks tries to help you with making those, and what the potential is in teaching. So what's next?
+You've seen what a TeachBooks is, how git is useful in combination with it, and what the potential is in teaching. So what's next?
 
 In this manual we explain how to get going depending on the way you want to use it. If you successfully followed the steps until here, you'll be able to make book as a 'user type 3'!
 

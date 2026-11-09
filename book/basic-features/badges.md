@@ -1,6 +1,6 @@
 # Badges, Buttons & Icons
 
-<a href="https://jupyterbook.org/"><img  style="display:inline-block; height:1.5em; width:auto; transform:translate(0, -0.15em)" src="../images/logo-wide.svg" alt="Jupyter book"></a> provides a range of features which are visually appealing and functional. These elements can enhance the interactivity and visual design of your book, offering additional information or links in a compact and visually engaging way. The badges, buttons and icons are made available through Sphinx and they themselves wrote a [documentation](https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html) about it.
+<a href="https://jupyterbook.org/v1/"><img  style="display:inline-block; height:1.5em; width:auto; transform:translate(0, -0.15em)" src="../images/logo-wide.svg" alt="Jupyter book v1"></a> provides a range of features which are visually appealing and functional. These elements can enhance the interactivity and visual design of your book, offering additional information or links in a compact and visually engaging way. The badges, buttons and icons are made available through Sphinx and they themselves wrote a [documentation](https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html) about it.
 
 (my_ref)=
 ## Badges
@@ -36,7 +36,7 @@ Here's an overview of all the available colours:
 
 ## Buttons
 
-Buttons provide a way to create clickable elements that are more attractive than links, for example, to link to key sections of your book such as downloads or external resources. Jupyter-Book supports buttons using Markdown making them highly customizable. It is possible to link to external websites as well as chapters within your book. To link to an external page, use `{button-link}`. `{button-ref}` must be used when linking to a part within your book.
+Buttons provide a way to create clickable elements that are more attractive than links, for example, to link to key sections of your book such as downloads or external resources. Jupyter-Book v1 supports buttons using Markdown making them highly customizable. It is possible to link to external websites as well as chapters within your book. To link to an external page, use `{button-link}`. `{button-ref}` must be used when linking to a part within your book.
 
 The basic code syntax for creating a button is as follows:
 
@@ -49,13 +49,13 @@ The basic code syntax for creating a button is as follows:
     :color: primary
     ``` 
 ```
-
-```{button-ref} ../features/overview.md
+[](../features/overview.md)
+```{button-ref} feature_overview
 :color: secondary
 ``` 
 
 ```
-    ```{button-ref} ../features/overview.md
+    ```{button-ref} feature_overview
     :color: secondary
     ``` 
 ```
@@ -119,12 +119,12 @@ To add an icon, use the following syntax:
 
 **1. Image Icons**
 
-Let's have a look at the first sentence of this chapter again: <a href="https://jupyterbook.org/"><img  style="display:inline-block; height:1.5em; width:auto; transform:translate(0, -0.15em)" src="../images/logo-wide.svg" alt="Jupyter book"></a> provides a range of features which are visually appealing and functional.
+Let's have a look at the first sentence of this chapter again: <a href="https://jupyterbook.org/v1/"><img  style="display:inline-block; height:1.5em; width:auto; transform:translate(0, -0.15em)" src="../images/logo-wide.svg" alt="Jupyter book v1"></a> provides a range of features which are visually appealing and functional.
 
 Here the Jupyter-book logo was inserted for a more professional look. It's including a link `href` and and image saved as `../images/logo-wide.svg`
 
 ```
-<a href="https://jupyterbook.org/"><img  style="display:inline-block; height:1.5em; width:auto; transform:translate(0, -0.15em)" src="../images/logo-wide.svg" alt="Jupyter book"></a> provides a range of features which are visually appealing and functional.
+<a href="https://jupyterbook.org/v1/"><img  style="display:inline-block; height:1.5em; width:auto; transform:translate(0, -0.15em)" src="../images/logo-wide.svg" alt="Jupyter book v1"></a> provides a range of features which are visually appealing and functional.
 ```
 
 **2. SVG Icons**

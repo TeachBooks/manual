@@ -1,100 +1,133 @@
-(apa)=
-# APA References
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 4 and 5.
 ```
 
-{bdg-primary}`(To be converted into) Sphinx Extension`
+{bdg-primary}`Sphinx Extension`
 
-```{note}
-This feature is stable but because it relies on a local extension that is part of your book files and _not_ managed as part of a computing environment (e.g., `pip` or `conda`), unknown issues may arise. We would like to convert this feature into an independent Sphinx extension and/or Pybtext plugin. Visit the [project page on GitHub](https://github.com/orgs/TeachBooks/projects/17) to learn more.
+````
 
-The instructions provided here will work under conventional usage with Jupyter Book (e.g., `jupyter book build book`).
-
-A temporary fix has also been implemented in the TeachBooks package for use with the Deploy Book Workflow (release mode) (see [release notes from v0.1.0](https://github.com/TeachBooks/TeachBooks/releases/tag/v0.1.0)).
-```
+(apa)=
+# APA References
 
 ## Introduction
 
-Do you include references in your book, but you're tired of the default options available in Jupyter Book? For example, the square-bracket style of citation and reference, where the first three letters of the name year are combined in a way that seems designed to minimize transparency?
+Do you include references in your book, but you're tired of the default options available in a TeachBook / Jupyter Book v1? For example, the square-bracket style of citation and reference, where the first three letters of the name year are combined in a way that seems designed to minimize transparency?
 
 There is a solution! This extension allows you to have APA formatting in your book.
 
 ## Installation
-To use APA-references, a set of Python files need to be manually loaded into your book
 
-**Step 1: files to root directory of your book**
+To use APA-references, install the [Sphinx-APA-References extension](https://github.com/TeachBooks/Sphinx-APA-References) by following these two steps:
 
-Download this zip-file [`_ext.zip`](_ext.zip), which contains the necessary files, unzip it and place the contents in the root of your book directory so that it looks like the schematic here:
+**Step 1: Install the Package**
 
+Install the module `sphinx-apa-references` package using `pip`:
 ```
-book
-├── _ext/
-│   ├── pybtexapastyle/
-│   ├── apastyle.py
-│   ├── bracket_citation_style.py
-├── _config.yml
-├── _toc.yml
-├── requirements.txt
-├── <book files>
+pip install sphinx-apa-references
 ```
-
+    
 **Step 2: Add to `requirements.txt`**
 
-Add a specific version of `docutils` to your requirements file:
+Make sure that the package is included in your project's `requirements.txt` to track the dependency:
 ```
-docutils==0.17.1
+sphinx-apa-references
 ```
 
 **Step 3: Enable in `_config.yml`**
 
-In your `_config.yml` file, add a `bibtex_default_style`, `bybtex_reference_style` and the local extensions `apastyle` and `bracket_citation_style.py`
+In your `_config.yml` file, add the extension to the list of Sphinx extra extensions (**important**: underscore, not dash this time) and specify the location of your bib file (note indentation of the bibtex file path specification; any number of bib files are allowed):
 ```
-sphinx:
-  config:
-    ...
-    bibtex_default_style: myapastyle
-    bibtex_reference_style: author_year_round
-  local_extensions:
-    apastyle: _ext/
-    bracket_citation_style: _ext/
-  ...
+sphinx: 
+    extra_extensions:
+        .
+        .
+        .
+        - sphinx_apa_references
+        .
+        .
+        .
+bibtex_bibfiles: "<path_to_bib_file>/references.bib"
 ```
 
 ## Usage
 
-All references are now made in APA-style. See for example this reference: {cite:t}`jason_moore` which shows up on the [references page](../references.md) too. The form of the citation looks like this:
+All references are now made in APA-style. Here are five examples how to create a citation in APA style:
+
+| Syntax | Result with 1 author | Result with many authors | Explanation |
+| :---: | :---: | :---: | :---: |
+|`{cite:t}` | {cite:t}`jason_moore` | {cite:t}`dummyreference` | Textual citation |
+|`{cite:p}`| {cite:p}`jason_moore` | {cite:p}`dummyreference` | Parenthetical citation |
+|`{cite}`| {cite}`jason_moore` | {cite}`dummyreference` | Same as `{cite:p}` |
+|`{cite:ts}` | {cite:ts}`jason_moore` | {cite:ts}`dummyreference` | Same as `{cite:t}`, but without abbreviation of authors |
+|`{cite:ps}`| {cite:ps}`jason_moore` | {cite:ps}`dummyreference` |Same as `{cite:p}`, but without abbreviation of authors |
+
+For more options on the in-line citation style, see https://jupyterbook.org/v1/content/citations.html#change-the-in-line-citation-style.
+
+The references section at the end of your book will also be formatted in APA style:
+
+::::{admonition} Example of APA References
+:class: example
+
+```{iframe} ../references.html
+:class: no-blend
+```
+::::
+
+## Duplicate label warning
+
+You might encounter a warning during the build process that has this structure:
 
 ```
-{cite:t}`jason_moore`
+<filename>:<lineno>: WARNING: duplicate label "<authors>, <year>" for keys "<key1>" and "<key2>"
 ```
 
-Here are three examples for making citations:
+This is might have different cause, but often it is because two different references have the same author(s) and the same year. A common solution is to add letters to the year in the `.bib` file, like this:
 
-| Syntax | Result |
-| :---: | :---: |
-|`{cite:t}` | {cite:t}`jason_moore` |
-|`{cite:p}`| {cite:p}`jason_moore` |
-|`{cite}`| {cite}`jason_moore` |
+```bibtex
+@misc{launch_buttons,
+  author = {{TeachBooks}},
+  title = {Custom launch buttons},
+  url = {https://github.com/TeachBooks/Sphinx-launch-buttons},
+  year = {2024a},
+  note = {Retrieved December, 2024. BSD-3-Clause.},
+}
 
-For more options on the in-line citation style, see https://jupyterbook.org/en/stable/content/citations.html#change-the-in-line-citation-style.
+@misc{nested,
+  author = {{TeachBooks}},
+  title = {Git workflow: Share content between book},
+  url = {https://github.com/TeachBooks/Nested-Books},
+  year = {2024b},
+  note = {Retrieved December, 2024. CC BY 4.0.},
+}
 
-### Known Issues
+```
 
-Two issues are known:
-- During the build, warning will be raised with `... WARNING: duplicate label for keys ...`. In most cases, these warnings can be ignored. As noted above, the book will not build references properly 
-- In case you have both an `.ipynb` and `.md` version of a file, the `.md` version will always be used whenever this extension is used. This removes the possibility to show code outputs.
+This does negate the automatic ordering of references by the order `authors > year > title`, so our advice is to only use this solution when the bibliography contains duplicate author-year combinations ánd the bibliography is final. That way the you can use the sorted order with warnings to determine the correct letters to add to the years.
 
 ## Implementation
 
 The extension is based on [`pybtex`](https://pybtex.org/), which is a BibTeX-compatible bibliography processor in Python that is extendible with plugins. 
 
-Although some customization is possible with the standard Jupyter Book features, [as described here](https://jupyterbook.org/en/stable/content/citations.html#change-the-in-line-citation-style), this extension implements the complete APA style, as well as enforcing round brackets (like this).
+Although some customization is possible with the standard Jupyter Book v1 features, [as described here](https://jupyterbook.org/v1/content/citations.html#change-the-in-line-citation-style), this extension implements a complete APA style, as well as enforcing round brackets (like this).
 
-The need to enforce `docutils==0.17.1` version is the only known solution to the issue where empty brackets `[]` are left on the references page.
+### Previous implementation
 
-## Contribute
+APA referencing was previously implemented by including a local extension in a book subdirectory `_ext` (described [here](https://github.com/jupyter-book/jupyter-book/issues/1090)). To upgrade, once this Sphinx extension is implemented in your book, the local extension files in `_ext` can be deleted and the four lines indicated below removed from your `_config.yml` file:
 
-This tool needs to be developed further to make it into a proper sphinx-extension (and/or an independent `pybtext` plugin). The process is described in this [project page on GitHub](https://github.com/orgs/TeachBooks/projects/17). If you've ideas or questions, please reach out to us at info@teachbooks.io!
+```yaml
+sphinx:
+  config:
+    .
+    .
+    .
+    bibtex_reference_style: author_year_round   # remove
+    bibtex_default_style: myapastyle            # remove
+    .
+    .
+    .
+  local_extensions:
+    apastyle: _ext/                             # remove
+    bracket_citation_style: _ext/               # remove
+```

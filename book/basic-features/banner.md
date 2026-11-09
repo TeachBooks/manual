@@ -1,6 +1,6 @@
 # Banners and Announcements
 
-A banner can be added to the top of a Jupyter Book: 
+A banner can be added to the top of a TeachBook: 
 
 ```{figure} banner_mude.png
 ---
@@ -10,7 +10,7 @@ name: banner_mude
 Example of a banner in the MUDE book.
 ```
 
-This is a commonly used feature, described in the [Jupyter Book manual here](https://jupyterbook.org/en/stable/web/announcements.html). However, note that if you are using the Sphinx-Thebe interactive Python feature, or other features that customize the top part of a Jupyter Book website (for example, the download page buttons), the banner does not always work. In this case, the banner should be specified using the `announcement` option in the `html_theme_options` setting in the `_config.yml` file:
+This is a commonly used feature, described in the [Jupyter Book v1 manual here](https://jupyterbook.org/v1/web/announcements.html). However, note that if you are using the Sphinx-Thebe interactive Python feature, or other features that customize the top part of a TeachBook (for example, the download page buttons), the banner does not always work. In this case, the banner should be specified using the `announcement` option in the `html_theme_options` setting in the `_config.yml` file:
 
 ```
 sphinx:

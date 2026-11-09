@@ -1,11 +1,13 @@
-# Discussions in your book: Utterances
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This section is useful for user type 3-5.
 ```
 
 {bdg-white}`GitHub app and Javascript script`
+````
+
+# Discussions in your book: Utterances
 
 [Utterances 🔮](https://utteranc.es/) is a lightweight open-source widget which allows you, your colleages and your students to discuss stuff in a blog post in your book. It is build on GitHub issues, so requires a GitHub repository, although the book can be hosted anywhere (so also on GitLab).
 

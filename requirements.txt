@@ -1,16 +1,13 @@
-teachbooks == 0.1.0
-sphinx-inline-tabs == 2023.4.21
-jupyterbook_patches==1.4.2
-download_link_replacer == 1.0.4
-teachbooks-sphinx-grasple == 1.0.5
-sphinx-image-inverter == 1.1.2
-sphinx-exercise == 1.0.1
-sphinx-proof == 0.2.1
-sphinx-named-colors == 1.0.1
-sphinx-iframes == 1.0.5
-sphinx-prime-applets == 1.0.2
+teachbooks == 0.2.7
+sphinx-inline-tabs
 
-git+https://github.com/TeachBooks/Sphinx-Thebe
+git+https://github.com/TeachBooks/TeachBooks-Favourites@all_authors
 
-docutils==0.17.1
+teachbooks-sphinx-grasple
 
+sphinx-apa-references
+
+# For executing Jupyter Notebooks
+myst_nb
+numpy
+matplotlib

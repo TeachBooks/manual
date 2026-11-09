@@ -255,7 +255,7 @@ const createFigureReference = (path, name, caption) => {
         + "{numref}`{number} &lt" + name + "&gt`";
 }
 
-//Via https://jupyterbook.org/en/stable/content/references.html#reference-tables
+//Via https://jupyterbook.org/v1/content/references.html#reference-tables
 const createTableReference = (caption, name) => {
     return "<b> tabel code: </b><br/>"
     +"```{table} " + caption + "<br/>"

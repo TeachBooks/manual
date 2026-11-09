@@ -23,9 +23,9 @@ When you have installed `jupyterlite-xeus-python`, the kernel will automatically
         }
     }
 
-## Updating the Jupyter Book `_config.yml`
+## Updating the TeachBook's `_config.yml`
 
-Since `jupyterlite-sphinx` is a Sphinx extension, we need to tell Jupyter Book to include it in the build process and specify the name of the `jupyterlite` configuration file. To do so, create a new entry in `_config.yml` like this:
+Since `jupyterlite-sphinx` is a Sphinx extension, we need to tell TeachBooks to include it in the build process and specify the name of the `jupyterlite` configuration file. To do so, create a new entry in `_config.yml` like this:
 
     sphinx:
         extra_extensions:
@@ -37,4 +37,4 @@ Of course, change `jupyterlite-config.json` to the name of your configuration fi
 
 ## Building
 
-When everything is configured correctly, a `Xeus-Python` kernel will be built when you build your book via `jupyter book build`. You can check this by keeping an eye on the output in the terminal: you should see a lot of extra lines mentioning `JupyterLite`.
+When everything is configured correctly, a `Xeus-Python` kernel will be built when you build your book via `teachbooks build`. You can check this by keeping an eye on the output in the terminal: you should see a lot of extra lines mentioning `JupyterLite`.

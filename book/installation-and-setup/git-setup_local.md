@@ -1,9 +1,11 @@
-# Git: GitHub Desktop / Git in VS Code
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 4 and 5.
 ```
+````
+
+# Git: GitHub Desktop / Git in VS Code
 
 In this section you will learn how to install Git locally. Courses on Git usually make use of the command line interface to do run Git, but this introduces a steep learning curve. Instead, using Git from VS Code / GitHub Desktop is much more visual (i.e., more "clicky"), and therefore easier to use for those inexperienced with the command line.
 
@@ -25,9 +27,9 @@ Open up a terminal window (*Command + Space*, type in `terminal`). Then, type th
 Click on `install`. The installation may take a couple of minutes. Once it's finished, check if everything has been installed correctly by executing `git` again.
 ````
 
-## Setting up SSH-keys
+## Setting up SSH-keys, for GitLab only
 
-When we want to visit repositories on GitLab or GitHub, we need to log in. The same holds if we want to interact with these repositories with Git from VS Code. This means that everytime we make a commit, pull, et cetera, we need to provide our password, which becomes very tedious. Alternatively, we can provide GitLab/GitHub with an SSH-key of our system, so that GitLab/GitHub knows it is indeed us that are making the changes to the repository, removing the need to provide a password. If you're only using GitHub and GitHub desktop, SSH-keys aren't strictly required, but it's still advised you set these up.
+When we want to visit repositories on GitLab or GitHub, we need to log in. The same holds if we want to interact with these repositories with Git from VS Code. This means that everytime we make a commit, pull, et cetera, we need to provide our password, which becomes very tedious. Alternatively, we can provide GitLab/GitHub with an SSH-key of our system, so that GitLab/GitHub knows it is indeed us that are making the changes to the repository, removing the need to provide a password. If you're only using GitHub and GitHub desktop, SSH-keys aren't required!
 
 1. Open up a terminal window (Git Bash on Windows). Next, type (or copy and paste) the following command:
 
@@ -101,7 +103,7 @@ When we want to visit repositories on GitLab or GitHub, we need to log in. The s
 
 ## Updating the local Git environment
 
-The final step is to provide a username and email address to Git, so our commits can be identified. To do this, in the terminal (Git Bash on Windows) type in the following command for the username:
+The final step is to provide a username and email address to Git, so our commits can be identified. If you use GitHub Desktop, there will be a notification which guides you through this. If you want to do it manually: in the terminal (Git Bash on Windows) type in the following command for the username:
 
     git config --global user.name "<first name> <last name>"
 
@@ -111,7 +113,7 @@ And type the following command to set the email address:
 
 ## GitHub Desktop
 
-GitHub is a competitor company to GitLab. It provides very similar services, but they are often called different names, or have slightly different features. GitHub provides a free software that is very useful: [GitHub Desktop](https://desktop.github.com/)! While GitLab is a cloud-based version control system built around Git, GitHub Desktop makes it possible to manage our Git repositories locally on our computers, even though they are stored on GitLab. This is very useful for working with the jupyter-book more extensively and work on interactive features. GitHub Desktop provides an alternative to Git in VS Code, and will be described on a later stage.
+GitHub is a competitor company to GitLab. It provides very similar services, but they are often called different names, or have slightly different features. GitHub provides a free software that is very useful: [GitHub Desktop](https://desktop.github.com/)! While GitLab is a cloud-based version control system built around Git, GitHub Desktop makes it possible to manage our Git repositories locally on our computers, even though they are stored on GitLab. This is very useful for working with the TeachBook more extensively and work on interactive features. GitHub Desktop provides an alternative to Git in VS Code, and will be described on a later stage.
 
 ## Terminology
 This is a (non-exhaustive) list of terminology that will be used in Git for local use.

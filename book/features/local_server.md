@@ -1,12 +1,14 @@
-(setup-local-server)=
-# Local Server to view interactive elements locally
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This section is useful for user type 4-5.
 ```
 
-{bdg-secondary}`Python Package: teachbooks`
+{bdg-link-secondary}`Uses TeachBooks package <./teachbooks_intro.html>`
+````
+
+(setup-local-server)=
+# Local Server to view interactive elements locally
 
 Perhaps you have already noticed that when building a book and testing it locally on your computer, some features do not work the way you expect, or worse---do not work at all! This is because many interactive features rely on browser functionality to work properly, for example: Grasple/H5p iframe exercises, Sphinx-Thebe Python interactivity and HTML/Javascript elements. Although the website is _static_ (i.e., there is no code running on a webserver that generates the content), modern web browsers have their own internal computing environments that run processes to deliver the rich content we desire in our books.
 
@@ -15,7 +17,7 @@ Technically what is needed to facilitate this during the editing and checking of
 ```{admonition} Why do you need a local server?
 :class: tip
 
-A Jupyter Book is really just a _static website._ This means that all book content _and interactivity_ is available via the (static) files that are provided to you by a webserver when you visit a specific URL. After this initial request, all required files are available in your web browser, however, some features require the request and response protocol to work properly. 
+A TeachBook is really just a _static website._ This means that all book content _and interactivity_ is available via the (static) files that are provided to you by a webserver when you visit a specific URL. After this initial request, all required files are available in your web browser, however, some features require the request and response protocol to work properly. 
 ```
 
 We recommend you use the **TeachBooks Python Package**, which has a `serve` command in the CLI tool to start and stop local servers. Find out more on {ref}`the TeachBooks Package page <teachbooks-serve>`.

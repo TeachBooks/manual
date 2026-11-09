@@ -1,7 +1,7 @@
 (tex_md_converter)=
 # Convert LaTeX to Markdown
 
-A script is to convert LaTeX files to Markdown for use in Jupyter Books {cite:p}`timon_latex`.
+A script is to convert LaTeX files to Markdown for use in TeachBooks and Jupyter Books v1 {cite:p}`timon_latex`.
 
 This script has been used successfully on at least one book in the TU Delft OPEN library: [Introduction to particle and continuum mechanics, by Timon Idema](https://textbooks.open.tudelft.nl/textbooks/catalog/book/81). The author is able to convert nearly everything in this book automatically, with only a few manual adjustments needed (e.g., a special character and a figure caption).
 

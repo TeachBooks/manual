@@ -18,10 +18,6 @@
 	path = book/external/Sphinx-Image-Inverter
 	url = https://github.com/TeachBooks/Sphinx-Image-Inverter.git
         branch = Manual
-[submodule "book/external/JupyterBook-Patches"]
-	path = book/external/JupyterBook-Patches
-	url = https://github.com/TeachBooks/JupyterBook-Patches.git
-        branch = manual_docs
 [submodule "book/external/Download-Link-Replacer"]
 	path = book/external/Download-Link-Replacer
 	url = https://github.com/TeachBooks/Download-Link-Replacer.git
@@ -58,3 +54,7 @@
 	path = book/external/Sphinx-PRIME-applets
 	url = https://github.com/TeachBooks/Sphinx-PRIME-applets.git
 	branch = manual
+[submodule "book/external/JupyterBook-Patches"]
+	path = book/external/JupyterBook-Patches
+	url = https://github.com/TeachBooks/JupyterBook-Patches.git
+	branch = manual_docs

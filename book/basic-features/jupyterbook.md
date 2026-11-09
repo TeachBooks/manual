@@ -1,18 +1,17 @@
-# Anatomy of a Jupyter Book
+# Anatomy of a TeachBook
 
-To build a Jupyter Book, you need three things:
+To build a TeachBook, you need three things:
 
 1. A configuration file
 2. A table of contents
 3. Content
 
 ## The configuration file
-The configuration file of Jupyter Books is named `_config.yml`. It mainly contains settings that apply when building the book. Here is a basic example of a configuration file, taken from this book:
+The configuration file of TeachBooks is named `_config.yml`. It mainly contains settings that apply when building the book. Here is a basic example of a configuration file, taken from this book:
 
 ```yaml
-title: Jupyter Book Manual
-author: Interactive Textbooks CiTG
-logo: images/TUDelft_logo_rgb.png
+title: TeachBook Manual
+author: TeachBooks development team
 copyright: CC BY-NC
 
 execute:
@@ -23,7 +22,7 @@ sphinx:
   - sphinx_inline_tabs
 ```
 
-Technically speaking, a `_config.yml` file is not required to build a Jupyter Book. If you don't make one, `jupyter book` will just use all default values. However, you should make a configuration file which includes at least the following settings:
+Technically speaking, a `_config.yml` file is not required to build a TeachBook. If you don't make one, your TeachBook will just use all default values. However, you should make a configuration file which includes at least the following settings:
 
 - `title`: the title of your book, which appears on the top-left of every page, under the logo.
 - `author`: authors of the book, which appears in the bottom margin of every page.
@@ -32,7 +31,7 @@ Technically speaking, a `_config.yml` file is not required to build a Jupyter Bo
 
 In addition, the following option can also be useful:
 
-- `execute_notebooks`: *turn on/off* the execution of Jupyter Notebooks during the build process. *On* by default. If you perform heavy computations in your notebook (machine learning, FEM models, et cetera), you might be better off running the notebooks on a more powerful machine as opposed to the CI/CD server. To turn it off, specify the value `'off'`. You can also exclude specific notebooks by creating exclude patterns in the filenames. For more info, see the [Jupyter Book documentation](https://jupyterbook.org/en/stable/content/execute.html#exclude-files-from-execution).
+- `execute_notebooks`: *turn on/off* the execution of Jupyter Notebooks during the build process. *On* by default. If you perform heavy computations in your notebook (machine learning, FEM models, et cetera), you might be better off running the notebooks on a more powerful machine as opposed to the CI/CD server. To turn it off, specify the value `'off'`. You can also exclude specific notebooks by creating exclude patterns in the filenames. For more info, see the [Jupyter Book v1 documentation](https://jupyterbook.org/v1/content/execute.html#exclude-files-from-execution).
 
 
 ```{warning}
@@ -115,6 +114,9 @@ parts:
     - file: section_1_1
     - file: section_1_2
 ```
+
+#### Exercise
+Check out [this exercise](https://teachbooks.io/template/syntax_exercises/007.html) in the TeachBooks template to see for yourself how to structure files with titles!
 
 ### Including a chapter twice
 In some cases you want to include the same chapter in two different places in your book (for instance parts). However, you do not want to make the same adjustments in different files, the content should only 'live' in one place. The solution is to use `include`:

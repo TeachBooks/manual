@@ -29,9 +29,11 @@ $$ F = m \cdot a = 10 \cdot 9.81 = 98 \text{N}$$
 
 To number the equations and refer in text, you need to provide a label to the equation. Just put the label between brackets and place it after the last \$\$, like this:
 
-    $$
-        F = m \cdot a
-    $$ (newtons_second_law)
+```md
+$$
+    F = m \cdot a
+$$ (newtons_second_law)
+```
 
 Resulting in:
 
@@ -43,5 +45,5 @@ Equation {eq}`show_newtons_second_law` can now be referred to.
 
 > **Note**
 > 
-> The Jupyter Book uses MathJax to display equations, which provides some LaTeX-like functionality, but not all! For example, the Euro symbol is missing, and packages like `siunitx` are not available (hint, use `\textrm{}` and `\textrm{}`). When something is not working, it's useful to search for MathJax-specific solutions (hint, include "mathjax" in your Google search).
+> The TeachBook uses MathJax to display equations, which provides some LaTeX-like functionality, but not all! For example, the Euro symbol is missing, and packages like `siunitx` are not available (hint, use `\textrm{}` and `\textrm{}`). When something is not working, it's useful to search for MathJax-specific solutions (hint, include "mathjax" in your Google search).
 > 

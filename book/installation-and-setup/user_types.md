@@ -1,6 +1,6 @@
 # User types
 
-Different types of users will interact with the website or the Jupyter Books differently and will therefore need to know more or less about the composition of the book. For now we will differentiate 5 types of users.
+Different types of users will interact with the website or the TeachBooks differently and will therefore need to know more or less about the composition of the book. For now we will differentiate 5 types of users.
 
 ## User type 1: Students providing feedback via the book website
 
@@ -32,7 +32,7 @@ class: dark-light
 
 ```
 
-In a similar manner as students, colleagues and team members can leave content-related comments on the website through extensions or GitHub/GitLab features (e.g., Issues). In this way, multiple teachers can give input in the draft of the textbook and course material without requiring a complete understanding of Jupyter Books or GitLab/GitHub. The responsible teacher (or student assistants) can then make adaptations to the book as recommended by their colleagues.
+In a similar manner as students, colleagues and team members can leave content-related comments on the website through extensions or GitHub/GitLab features (e.g., Issues). In this way, multiple teachers can give input in the draft of the textbook and course material without requiring a complete understanding of TeachBooks or GitLab/GitHub. The responsible teacher (or student assistants) can then make adaptations to the book as recommended by their colleagues.
 
 ## User type 3: Colleague making adjustments via the browser
 

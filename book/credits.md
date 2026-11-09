@@ -5,11 +5,13 @@ You can refer to this book in its entirety as:
 
 > TeachBooks Development Team (2024), _TeachBooks Manual_. https://github.com/TeachBooks/manual. Retreived [Month, Year]. CC BY 4.0.
 
+This book is registered on Zenodo too: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15100848.svg)](https://doi.org/10.5281/zenodo.15100848)
+
 The introduction, structure and decisions on content is done under direction of the TeachBooks Development Team. The content is written by many contributors, of which there are many.
 
-We anticipate that the content of this book will change continuously. Therefore, if you'd like to refer to a specific chapter, we recommend using the source code directly with the citation that refers to the GitHub repository and lists the date and name of the file. Although content will be added over time, chapter titles and URL's in this book are expected to remain relatively static after Spring 2025. You can refer to individual chapters or pages within this book as:
+We anticipate that the content of this book will change continuously. Therefore, if you'd like to refer to a specific chapter, we recommend using the source code directly with the citation that refers to the GitHub repository and lists the date and name of the file. Although content will be added over time, chapter titles and URL's in this book are expected to remain relatively static. You can refer to individual chapters or pages within this book as:
 
-> `<Primary Author>` (2024), `<Title of Chapter or Page>`. In _TeachBooks Manual_. https://github.com/TeachBooks/manual (chapter `./book/intro/`, retrieved [`<date>`]).
+> `<Title of Chapter or Page>`. In _TeachBooks Manual_. https://github.com/TeachBooks/manual (chapter `./book/intro/`, retrieved [`<date>`]).
 
 Better yet, include a link to the specific commit! _If you know what this means, we assume you know how to do it._
 
@@ -54,6 +56,8 @@ The following pages are included directly from an external resource and is not e
 - Page [](./external/teachbooks-sphinx-tippy/README.md). Original content licensed under MIT license.
 - Page [](./external/template/README.md). Original content licensed under CC BY 4.0 license.
 - Page [](./external/Sphinx-Named-Colors/README.md). Original content licensed under MIT license.
+- Page [](indexed_defintions). Original content licensed under MIT license.
+- Page [](interactive_graph_content). Original content licensed under MIT license.
 - Pages [](./external/Useful_python_code/extensionfildownloadreturn.ipynb), [](./external/Useful_python_code/figshrinker.ipynb) and [](./external/Useful_python_code/snippit.ipynb). Original content licensed under BSD 3-Clause license.
 
 The following pages contain content written by others, part of has been reused and/or modified by the TeachBooks Team:
@@ -61,7 +65,6 @@ The following pages contain content written by others, part of has been reused a
 - Page {ref}`copyright_licenses`: {numref}`Figure %s<fig_license_types>` is included unmodified, along with paraphrased and quoted text (including hyperlinks) from {cite:t}`hall21`. Work is licensed under CC BY.
 - Page {ref}`copyright_licenses`: {numref}`Figure %s<fig_license_compatibility>` is included unmodified. Work is provided by Kennisland under a CC0 license. Accessed at [](https://wiki.creativecommons.org/wiki/File:CC_License_Compatibility_Chart.png) on December 17, 2024.
 - page [](./features/versioning.md): includes text from {cite:t}`semver` that has been modified. Original content licensed under CC BY 3.0.
-
-
-
-
+- page [](./features/external_toc.md): includes text from {cite:t}`teachbooks_package` that has been modified. Original content licensed under MIT.
+- Page [](./features/exercise.md): includes text from {cite:t}`sphinx-exercise` that has been modified. Original content licensed under MIT license.
+- Page [](./features/sphinx-proof.md): includes text from {cite:t}`sphinx-proof` that has been modified. Original content licensed under MIT license.

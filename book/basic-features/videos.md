@@ -13,9 +13,9 @@ kernelspec:
 
 # Videos
 
-Videos uploaded to YouTube can be embedded in the Jupyter Book. There are several ways to do so:
+Videos uploaded to YouTube can be embedded in the TeachBook. There are several ways to do so:
 
-**1.** To embed them in the Jupyter Book, first obtain the embedding link of the video. In order to do so, go to the *YouTube* page of the video (so not the Brightspace page), then click *share* in the description box. There should be a button *embed*, click that. Copy the HTML code that appears in the panel. Then, to embed the video, use the following 
+**1.** To embed them in the TeachBook, first obtain the embedding link of the video. In order to do so, go to the *YouTube* page of the video (so not the Brightspace page), then click *share* in the description box. There should be a button *embed*, click that. Copy the HTML code that appears in the panel. Then, to embed the video, use the following 
 
 ```
     <iframe

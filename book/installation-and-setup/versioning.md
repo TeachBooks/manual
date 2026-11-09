@@ -1,9 +1,11 @@
-# Versioning and URLs
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 4-5.
 ```
+````
+
+# Versioning and URLs
 
 Online books can be easily updated, however, this might confuse readers. Therefore, it's good practice to be aware of this and, where needed, provide an explicit version to the readers.
 

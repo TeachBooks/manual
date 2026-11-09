@@ -53,7 +53,7 @@ The first few lines of our JavaScript code are simple. To scale our element with
          var width = vw;
          
          // Create the canvas. We will use only part of it for the main plot
-         var svg = d3.select("#click") // This selects the div
+         var svg = d3.select("#click") // This selects the svg using its id
              .attr("width", width) // This defines the canvas' width
              .attr("height", height) // This defines the canvas' height
 ```

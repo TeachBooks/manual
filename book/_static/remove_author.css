@@ -1,0 +1,4 @@
+/* Hide the default Jupyter Book author footer */
+.component-author {
+  display: none;
+}

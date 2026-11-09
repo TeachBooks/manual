@@ -1,21 +1,25 @@
-# H5p interactive elements
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This section is useful for user type 3-5.
 ```
 
 {bdg-danger}`iframe`
+````
+
+# H5p interactive elements
 
 ## Instruction
-H5p elements are interactive HTML-blocks which can be embedded in a Jupyter Book using an iframe. An H5p element can be created in the [TU Delft portal on the H5p website](https://tudelft.h5p.com/content) (sign in via Brightspace to H5p required first). The iframe code can be copied at Edit - Publish - Public - Embed code. This html code can be directly added to your markdown file using [](../external/sphinx-iframes/README.md):
+H5p elements are interactive HTML-blocks which can be embedded in a TeachBook using an iframe. H5p requires a server to host those elements. For TU Delft employees, this is arranged for on a [TU Delft portal on the H5p website](https://tudelft.h5p.com/content) (sign in via Brightspace to H5p required first as described [here](https://www.tudelft.nl/teaching-support/educational-tools/h5p)).
+
+After creating an H5p element, the iframe code can be copied at Edit - Publish - Public - Embed code. This html link of that embed can be directly added to your markdown file using [](../external/sphinx-iframes/README.md):
 
 ````
 ```{h5p} https://....h5p.com/content/.../embed
 ```
 ````
 
-Alternative, you can use raw html:
+Alternative, you can use raw html (lacking proper dark mode conversion):
 ```html
 <iframe src="https://....h5p.com/content/.../embed" aria-label="..." width="1088" height="200" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://tudelft.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
 ```

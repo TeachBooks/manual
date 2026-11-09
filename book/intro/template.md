@@ -7,7 +7,7 @@ width: 150px
 align: right
 ```
 
-Now that you've been introduced to the basics of a Jupyter Book, let's make one! The TeachBooks Team has put together a set of tools to make the book-creation process as smooth and automatic as possible. This page guides you through the process of creating a book, followed by a series of exercises that are designed to help you get used to the syntax and structure of a Jupyter Book, as well as the tools and essential workflows associated with the editing, checking and review processes.
+Now that you've been introduced to the basics of a TeachBook, let's make one! The TeachBooks Team has put together a set of tools to make the book-creation process as smooth and automatic as possible. This page guides you through the process of creating a book, followed by a series of exercises that are designed to help you get used to the syntax and structure of a TeachBook, as well as the tools and essential workflows associated with the editing, checking and review processes.
 
 ## 1. Create a GitHub account
 TeachBooks relies of freely available services from GitHub to store files online, carry out the book-building process and host your book as a website. All you need to get started is a GitHub account (not counted in the 10 clicks 🤭).
@@ -26,7 +26,7 @@ Go to the [TeachBooks Template repository on GitHub](https://github.com/TeachBoo
 ```
 
 ## 3. Let's practice!
-Getting used to the syntax of writing in a Jupyter Book can be a bit daunting at the start, not to mention becoming familiar with the various tools and workflows required. To help make the learning curve somewhat easier to travel, a number of exercises covering the TeachBooks workflow have been prepared for you. The exercises are designed such that no prior experience with any tools or programming is required, as long as you have read the preceding introductory pages.
+Getting used to the syntax of writing in a TeachBook can be a bit daunting at the start, not to mention becoming familiar with the various tools and workflows required. To help make the learning curve somewhat easier to travel, a number of exercises covering the TeachBooks workflow have been prepared for you. The exercises are designed such that no prior experience with any tools or programming is required, as long as you have read the preceding introductory pages.
 
 The exercises on the TeachBooks Workflow can be found in your book at `https://<username or organiszation_name>.github.io/<repository_name>/exercises/exercises` (case sensitive) or at https://teachbooks.io/template/exercises.html.
 

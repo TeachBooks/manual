@@ -1,11 +1,13 @@
-# Making comments on the website: Hypothesis
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This section is useful for user type 1-5.
 ```
 
 {bdg-warning}`Javascript overlay` {bdg-success}`Chrome Extension`
+````
+
+# Making comments on the website: Hypothesis
 
 Hypothesis is a third-party application that allows anyone to make publicly visible comments on a website (once you create a free account). This section explains how to use and install the extension. As this tool requires an account with a third-party, we advise to use our [local-annotator](../external/annotater/README.md) with similar capabilities but which store annotations locally. By default Hypothesis stores annotations publicly, which might confuse other students.
 

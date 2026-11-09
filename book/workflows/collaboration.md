@@ -1,13 +1,15 @@
-# Collaborative book-editing
-
+````{margin}
 ```{admonition} User types
 :class: tip
 This page is useful for user type 3, 4 and 5.
 ```
+````
 
-A jupyter book is composed out of many files which contain the educational content produced by you. Through the use of branches it is possible to work on the book at the same time as your team-members. Working on content for the book is mainly individual work, the beauty of Git comes in when everybody's changes are merged into the main branch.
+# Collaborative book-editing
 
-We have previously introduced the notions of using Git in the online environment (remote) or locally. All the (text, figures, etc.) files that make up the book are contained on the remote repository on GitLab or GitHub. This could be on an open repository on `gitlab.com` or `github.com`. In the context of creating educational books for students at TU Delft, the repository will most likely be located on `gitlab.tudelft.nl` or `github.com/teachbooks`. If this is the first time you interact with books, you're advise to use `github.com`.
+A TeachBook is composed out of many files which contain the educational content produced by you. Through the use of branches it is possible to work on the book at the same time as your team-members. Working on content for the book is mainly individual work, the beauty of Git comes in when everybody's changes are merged into the main branch.
+
+We have previously introduced the notions of using Git in the online environment (remote) or locally. All the (text, figures, etc.) files that make up the book are contained on the remote repository on GitLab or GitHub. This could be on an open repository on `gitlab.com` or `github.com`. In the context of creating educational books for students at TU Delft, the repository will most likely be located on `github.com` or `gitlab.tudelft.nl`. If this is the first time you interact with books, you're advise to use `github.com`.
 
 The steps involved are as follows:
 

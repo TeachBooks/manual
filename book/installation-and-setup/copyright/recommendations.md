@@ -22,7 +22,7 @@ The recommendations on this page are designed for content that is available in t
 
 ## Key Locations in the Book
 
-Note that there are several types of pages and files that can be incorporated into your TeachBook which, together, accomplish our goals of proper attribution and referencing. These are summarized in the table and explained in more detail in the following sections, along with examples for implementation in a Jupyter Book.
+Note that there are several types of pages and files that can be incorporated into your TeachBook which, together, accomplish our goals of proper attribution and referencing. These are summarized in the table and explained in more detail in the following sections, along with examples for implementation in a TeachBook..
 
 ```{list-table} Key Locations in the Book for Attribution and Referencing Best Practices
 :header-rows: 1
@@ -52,19 +52,70 @@ Note that there are several types of pages and files that can be incorporated in
 
 (copyright_recc_content)=
 ### Content Pages
-Make sure you show the source of your content where it is provided. We adopt a standard icon and link to help readers recognize this: {fa}`quote-left`{ref}`Find out more here.<external_resources>`
+Make sure you show the source of your content where it is provided. We adopt a standard icon and link to help readers recognize this: {fa}`quote-left`{ref}`Find out more here.<external_resources>`. This can be used to provide attribution to authors for specific pages too
 
 #### How to implement this in your book
-
-Copy the following line into your content file
-```md
-> This page reuses <license> content from {cite:t}`bib_id`. {fa}`quote-left`{ref}`Find out more here.<link to external resources section on credits and license page>`
-```
 
 Some examples can be found in this manual:
 - [](../../external/deploy-book-workflow/README.md): a content page which is taken fully from another repository
 - Figure {ref}`fig_license_types`: a single licensed figure added to a page taken from another website
 - [](../copyright.md): a content page which adapts material from another website
+
+##### Format as citation
+Copy the following line into your content file
+
+```md
+> Written by `<author(s)>`
+> This page reuses <license> content from {cite:t}`bib_id`. {fa}`quote-left`{ref}`Find out more here.<link to external resources section on credits and license page>`
+```
+
+This produces
+
+> This page reuses CC BY content from {cite:t}`jason_moore`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
+
+(custom_attribution)=
+##### Format as custom admonition
+The previous syntax might be used for other purposes as well. An alternative is a custom attribution admonition:
+
+Therefore, use the following syntax:
+
+````{margin}
+```{attributiongrey} Attribution
+:class: attribution
+Written by <author(s)>
+This page reuses CC BY 4.0 licensed content from {cite:t}`jason_moore`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
+```
+````
+
+`````md
+````{margin}
+```{attributiongrey} Attribution
+:class: attribution
+Written by <author(s)>
+This page reuses <license> content from {cite:t}`bib_id`. {fa}`quote-left`{ref}`Find out more here.<link to external resources section on credits and license page>`
+```
+````
+`````
+
+To make this possible we use the custom admonitions of [the custom named colors sphinx extension](https://teachbooks.io/manual/external/Sphinx-Named-Colors/README.html#admonitions) in combination with a custom css file. `_config.yml` needs to be configured as follows, making sure to add the `sphinx-named-colors` extension to your environment (e.g., `requirements.txt`):
+
+```yaml
+sphinx:
+  config:
+    named_colors_custom_colors: {'attributiongrey':[150,150,150]}
+  extra_extensions:
+    - sphinx_named_colors
+```
+
+To adapt the symbol of the admonition (to double quotes), you can add the following [custom CSS class](../../_static/attribution.css) to `book/_static/attribution.css`:
+
+```css
+/* Attribution */
+div.attribution > .admonition-title::after {
+  content: "\f10d";
+}
+```
+
 
 (copyright_recc_credits)=
 ### Credits and License Page

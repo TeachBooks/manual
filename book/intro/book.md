@@ -1,15 +1,16 @@
 # What is a TeachBook?
 
-Never seen a TeachBook before? Here's a small demo of our MUDE-book!
+Never seen a TeachBook before? Here's a small demo of the MUDE-book!
 
 ```{video} https://www.youtube.com/embed/gbBsWo6em4c?si=ayKhISsx06LmGbDD
+:class: blend
 ```
 
-So what are you looking at? It's a website generated with the [Jupyter Book package](https://jupyterbook.org/). Various extensions have been added to improve the student-experience, especially for technical topics! The actual website you're looking at now is a Jupyter Book. With TeachBooks we aim to make it easy to collaboratively use it, even if you've little experience with the software package which is part of it.
+So what are you looking at? It's a website generated with the [TeachBooks package](https://github.com/TeachBooks/TeachBooks) which in turn makes use of many other tools, of which [Jupyter Book package](https://jupyterbook.org/v1/) and [Sphinx](https://www.sphinx-doc.org/) are the most prominent. Various extensions have been added to improve the student-experience, especially for technical topics! With TeachBooks we aim to make it easy to collaboratively use it, even if you've little experience with the software package which is part of it.
 
 ## Three Key Ingredients
 
-To create a Jupyter Book, three key ingredients are needed:
+To create a TeachBook, three key ingredients are needed:
 
 1. A **configuration file** to define functionalities, `_config.yml`
 2. A **table of contents** file to list which files should end up in the book, `_toc.yml`, as well as define its structure
@@ -37,7 +38,7 @@ Note the arrangement of the 3 key book ingredients in a subdirectory called `boo
 `````{admonition} Text-based files? yml? What is that?!
 :class: tip, dropdown
 
-Text-based files are digital files on your computer that you can open in a text editor and read directly. There are many file extensions used for text-based files, a few common ones related to Jupyter Book are: Markdown (`*.md`), Jupyter Notebooks (`*.ipynb`), and YAML (`*.yml`).
+Text-based files are digital files on your computer that you can open in a text editor and read directly. There are many file extensions used for text-based files, a few common ones related to TeachBooks are: Markdown (`*.md`), Jupyter Notebooks (`*.ipynb`), and YAML (`*.yml`).
 
 YAML (or YML) is a text-based file format that is primarily used to store data. It is useful because it is easy for humans to read and write, and easy for machines to _parse_ and generate., which is why YAML is often used for configuration files. Here is an example of a YAML file...can you tell what information is being stored?
 
@@ -63,25 +64,23 @@ You can see quite clearly that a number of files are listed, and that they are o
 
 ## How is a book made?
 
-A book is made by by writing content in text-based files such as Markdown (`*.md`), Jupyter Notebooks (`*.ipynb`), etc. After that, software is used to "parse" these files and create the final book (e.g., Jupyter Book). Fortunately when getting started you don't need to worry about the software because TeachBooks has set up GitHub tools for you that take care of this process automatically! The process is illustrated in the diagram below.
+A book is made by by writing content in text-based files such as Markdown (`*.md`), Jupyter Notebooks (`*.ipynb`), etc. After that, software is used to "parse" these files and create the final book (e.g., website). Fortunately when getting started you don't need to worry about the software because TeachBooks has set up GitHub tools for you that take care of this process automatically! The process is illustrated in the diagram below.
 
-```{figure} figures/intro-book.svg
----
-width: 700px
----
+```{figure} figures/intro-book-2.svg
+
 The process of building a book with TeachBooks. When just getting started, TeachBooks tools enables you to focus on what matters most: learning to write content for your book!
 ```
 
 ```{admonition} Familiar with LaTeX? There are similarities!
 :class: dropdown
 
-Have you ever used LaTeX? It turns out there are a lot of similarities with Jupyter Book. Here is a quick list:
+Have you ever used LaTeX? It turns out there are a lot of similarities with TeachBooks. Here is a quick list:
 1. Writing "source code" in text-based files (i.e., `*.tex` versus `*.md`, `*.ipynb`, etc) that is generally easy to read without the markup and uses special functions to format rich document objects (e.g., tables, figures, etc).
-2. The "book" is created by using a piece of software that parses the source code and creates the final document (a `*.pdf` versus a `*.html` for Jupyter Book).
+2. The "book" is created by using a piece of software that parses the source code and creates the final document (a `*.pdf` versus a `*.html` for TeachBooks).
 3. Creating the document structure using a list of files that contain source code that automatically generates the Table of Contents and Index..
 4. Sometimes you can spend more time than you like troubleshooting "bugs" that turn out to be simple syntax errors.
 
-If you've used LaTeX before, it will be relatively easy to learn to use a Jupyter Book.
+If you've used LaTeX before, it will be relatively easy to learn to use a TeachBook.
 ``` 
 
 ## Why are Git and GitHub Important?
